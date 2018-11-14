@@ -1,0 +1,6 @@
+framework module Tempo_ios_sdk {
+  umbrella header "Tempo-ios-sdk-umbrella.h"
+
+  export *
+  module * { export * }
+}

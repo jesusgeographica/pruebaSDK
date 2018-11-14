@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'Tempo-ios-sdk_Example' do
+  pod 'Tempo-ios-sdk', :path => '../'
+  pod 'Mapbox-iOS-SDK', '~> 4.4'
+
+  target 'Tempo-ios-sdk_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
