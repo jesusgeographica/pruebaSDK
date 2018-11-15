@@ -25,19 +25,19 @@ iOS library for indoor mapping using GeoJSON.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aragón' => 'javier.aragon@geographica.gs' }
-  s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git'}
+  s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git', :branch => 'cpoy-master'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.swift_version = '4.2'
 
-  s.source_files = 'Tempo-ios-sdk/Classes/**/*'
+  s.source_files = 'Tempo-ios-sdk'
   #s.preserve_path = '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h'
   #s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PROJECT_DIR)' }
   #s.library  = 'c++.tbd', 'z.tbd'
   #s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h' }
   #s.module_name = 'Tempo-ios-sdk'
-  s.frameworks = 'GLKit'
+  #s.frameworks = 'GLKit'
 
 end
