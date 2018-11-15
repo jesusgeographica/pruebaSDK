@@ -1,6 +1,0 @@
-framework module Pods_Tempo_ios_sdk_Tests {
-  umbrella header "Pods-Tempo-ios-sdk_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

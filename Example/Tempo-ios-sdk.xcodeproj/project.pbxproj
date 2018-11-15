@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		465F965C198F00F4014395C4 /* libPods-Tempo-ios-sdk_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 788025AEEC219F1053203B81 /* libPods-Tempo-ios-sdk_Tests.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		7BC982FA86B142A6455C36CD /* Pods_Tempo_ios_sdk_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE81183C7CB8D795B3A0EEEF /* Pods_Tempo_ios_sdk_Example.framework */; };
-		A46FF73D689FB205DAA54605 /* Pods_Tempo_ios_sdk_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFBC4ACB508B9D556A3D551 /* Pods_Tempo_ios_sdk_Tests.framework */; };
+		A76B6F2F37808A25290362E5 /* libPods-Tempo-ios-sdk_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2164F68FF334E6D52AF2D4F6 /* libPods-Tempo-ios-sdk_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06EFF4AA61AEB7CCB9AD6FC6 /* Pods-Tempo-ios-sdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk_Tests/Pods-Tempo-ios-sdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2164F68FF334E6D52AF2D4F6 /* libPods-Tempo-ios-sdk_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tempo-ios-sdk_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B26C97421662225004AFA60 /* Tempo_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tempo_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CA9E6897FD988619061613 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		478F8FAD116F3BB6B9B14575 /* Pods-Tempo-ios-sdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk_Example/Pods-Tempo-ios-sdk_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5EDA646A8075E46EC3B72759 /* Pods-Tempo-ios-sdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk_Example/Pods-Tempo-ios-sdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Tempo-ios-sdk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tempo-ios-sdk_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +41,8 @@
 		607FACE51AFB9204008FA782 /* Tempo-ios-sdk_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tempo-ios-sdk_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		788025AEEC219F1053203B81 /* libPods-Tempo-ios-sdk_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tempo-ios-sdk_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF1180D7F20661AFFE0F958 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DDE88DBAE6453C871259CD6E /* Pods-Tempo-ios-sdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk_Tests/Pods-Tempo-ios-sdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DE81183C7CB8D795B3A0EEEF /* Pods_Tempo_ios_sdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempo_ios_sdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAFBC4ACB508B9D556A3D551 /* Pods_Tempo_ios_sdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tempo_ios_sdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9558B9BD7B26667C09CCB1 /* Tempo-ios-sdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Tempo-ios-sdk.podspec"; path = "../Tempo-ios-sdk.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -55,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC982FA86B142A6455C36CD /* Pods_Tempo_ios_sdk_Example.framework in Frameworks */,
+				A76B6F2F37808A25290362E5 /* libPods-Tempo-ios-sdk_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,24 +59,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46FF73D689FB205DAA54605 /* Pods_Tempo_ios_sdk_Tests.framework in Frameworks */,
+				465F965C198F00F4014395C4 /* libPods-Tempo-ios-sdk_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A7196F9BA7D60EE057BDBE3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5EDA646A8075E46EC3B72759 /* Pods-Tempo-ios-sdk_Example.debug.xcconfig */,
-				478F8FAD116F3BB6B9B14575 /* Pods-Tempo-ios-sdk_Example.release.xcconfig */,
-				06EFF4AA61AEB7CCB9AD6FC6 /* Pods-Tempo-ios-sdk_Tests.debug.xcconfig */,
-				DDE88DBAE6453C871259CD6E /* Pods-Tempo-ios-sdk_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +74,6 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				E290118C372B58651FC0F005 /* Frameworks */,
-				1A7196F9BA7D60EE057BDBE3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				3B26C97421662225004AFA60 /* Tempo_ios_sdk.framework */,
-				DE81183C7CB8D795B3A0EEEF /* Pods_Tempo_ios_sdk_Example.framework */,
-				EAFBC4ACB508B9D556A3D551 /* Pods_Tempo_ios_sdk_Tests.framework */,
+				2164F68FF334E6D52AF2D4F6 /* libPods-Tempo-ios-sdk_Example.a */,
+				788025AEEC219F1053203B81 /* libPods-Tempo-ios-sdk_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,7 +156,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				68BACD75A130137F4836DC72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,32 +246,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		68BACD75A130137F4836DC72 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Tempo-ios-sdk_Example/Pods-Tempo-ios-sdk_Example-frameworks.sh",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/Tempo-ios-sdk/Tempo_ios_sdk.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
-				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Tempo_ios_sdk.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tempo-ios-sdk_Example/Pods-Tempo-ios-sdk_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C0CFA478E3BACDEEC7CF33BE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,10 +445,14 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EDA646A8075E46EC3B72759 /* Pods-Tempo-ios-sdk_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tempo-ios-sdk/CartoMobileSDK",
+				);
 				INFOPLIST_FILE = "Tempo-ios-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -502,10 +463,14 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 478F8FAD116F3BB6B9B14575 /* Pods-Tempo-ios-sdk_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tempo-ios-sdk/CartoMobileSDK",
+				);
 				INFOPLIST_FILE = "Tempo-ios-sdk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -516,7 +481,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06EFF4AA61AEB7CCB9AD6FC6 /* Pods-Tempo-ios-sdk_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -537,7 +501,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDE88DBAE6453C871259CD6E /* Pods-Tempo-ios-sdk_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

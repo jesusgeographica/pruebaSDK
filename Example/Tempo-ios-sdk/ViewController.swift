@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Tempo_ios_sdk
 
 class ViewController: UIViewController {
 
