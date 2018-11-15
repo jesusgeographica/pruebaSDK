@@ -7,25 +7,33 @@
 //
 
 import UIKit
+import GLKit
 
-class MapViewController: GLKViewController {
+open class MapViewController: GLKViewController {
     
     private let License = "XTUM0Q0ZRQ1JqaHpudExBaXI4MVRoeFYwdDF1bjNsU2xjd0lWQUtWOVlLTWFhRkwwTUYzWVJaNTJ1MzY2TWdtMAoKYXBwVG9rZW49OTQ4NDE5ODctODA5Mi00OTBlLTkwNDQtNzZlZWRkYWI3YmZhCmJ1bmRsZUlkZW50aWZpZXI9Z3MuZ2VvZ3JhcGhpY2EudGVtcG9zZGsKb25saW5lTGljZW5zZT0xCnByb2R1Y3RzPXNkay1pb3MtNC4qCndhdGVybWFyaz1jYXJ0b2RiCg==";
     
-    var mapView: NTMapView?
-    var marker: NTMarker?
+    //var mapView: NTMapView?
+    //var marker: NTMarker?
     
     var lat = 40.4470266
     var lng = -3.6941021
     
     var zoom : Float = 15
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     
+    public func loadMap(){
+    }
+    
+    public func initMap(){
+    }
+}
+    /*
     func loadMap(){
         mapView = NTMapView()
         view = mapView
@@ -43,5 +51,5 @@ class MapViewController: GLKViewController {
     func initMap(){
         NTLog.setShowInfo(true)
         NTMapView.registerLicense(License)
-    }
+    }*/
 }
