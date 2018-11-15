@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		A0064BC5219D56C800569D38 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A03014D6219B359A00A40704 /* libc++.tbd */; };
 		A03014C0219B34BA00A40704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014BF219B34BA00A40704 /* AppDelegate.swift */; };
-		A03014C7219B34BC00A40704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03014C6219B34BC00A40704 /* Assets.xcassets */; };
-		A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */; };
 		A03014D3219B351C00A40704 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014D1219B351C00A40704 /* MapViewController.swift */; };
 		A03014D5219B359500A40704 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03014D4219B359500A40704 /* GLKit.framework */; };
 		A0AE3645219DC90700EC729E /* CartoMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AE3644219DC90700EC729E /* CartoMobileSDK.framework */; };
@@ -19,8 +17,6 @@
 /* Begin PBXFileReference section */
 		A03014BC219B34BA00A40704 /* Tempo-ios-sdk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tempo-ios-sdk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03014BF219B34BA00A40704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A03014C6219B34BC00A40704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A03014C9219B34BC00A40704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A03014CB219B34BC00A40704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A03014D1219B351C00A40704 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A03014D2219B351C00A40704 /* Tempo-ios-sdk-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tempo-ios-sdk-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -78,8 +74,6 @@
 				A03014D2219B351C00A40704 /* Tempo-ios-sdk-Bridging-Header.h */,
 				A03014BF219B34BA00A40704 /* AppDelegate.swift */,
 				A03014D1219B351C00A40704 /* MapViewController.swift */,
-				A03014C6219B34BC00A40704 /* Assets.xcassets */,
-				A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */,
 				A03014CB219B34BC00A40704 /* Info.plist */,
 			);
 			path = "Tempo-ios-sdk";
@@ -143,8 +137,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */,
-				A03014C7219B34BC00A40704 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,17 +153,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A03014C9219B34BC00A40704 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A03014CC219B34BC00A40704 /* Debug */ = {
@@ -293,7 +274,6 @@
 		A03014CF219B34BC00A40704 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +297,6 @@
 		A03014D0219B34BC00A40704 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
