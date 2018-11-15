@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Tempo-ios-sdk'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'iOS library for indoor mapping.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ iOS library for indoor mapping using GeoJSON.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aragón' => 'javier.aragon@geographica.gs' }
-  s.source           = { :git => 'https://github.com/jesusgeographica/pruebaSDK'}
+  s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
@@ -33,11 +33,11 @@ iOS library for indoor mapping using GeoJSON.
   s.swift_version = '4.2'
 
   s.source_files = 'Tempo-ios-sdk/Classes/**/*'
-  s.preserve_path = '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h'
-  s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PROJECT_DIR)' }
+  #s.preserve_path = '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h'
+  #s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PROJECT_DIR)' }
   #s.library  = 'c++.tbd', 'z.tbd'
   #s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h' }
-  s.module_name = 'Tempo-ios-sdk'
+  #s.module_name = 'Tempo-ios-sdk'
   s.frameworks = 'GLKit'
 
 end
