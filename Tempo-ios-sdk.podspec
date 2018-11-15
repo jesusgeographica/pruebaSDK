@@ -35,7 +35,7 @@ iOS library for indoor mapping using GeoJSON.
   s.source_files = 'Tempo-ios-sdk/Classes/**/*'
   
   #s.preserve_path = "Tempo-ios-sdk-Bridging-Header.h"
-  s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/Pods/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h' }
+  #s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/Pods/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h' }
   s.frameworks = 'GLKit'
   s.dependency 'CartoMobileSDK', '4.1.4'
 
