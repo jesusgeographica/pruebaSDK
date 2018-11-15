@@ -13,6 +13,8 @@
 		A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */; };
 		A03014D3219B351C00A40704 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014D1219B351C00A40704 /* MapViewController.swift */; };
 		A03014D5219B359500A40704 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03014D4219B359500A40704 /* GLKit.framework */; };
+		A0B4590D219DC05F0017981A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B4590B219DC05F0017981A /* ViewController.swift */; };
+		A0B4590E219DC05F0017981A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B4590C219DC05F0017981A /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A03014D4219B359500A40704 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		A03014D6219B359A00A40704 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A03014D8219B35A000A40704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A0B4590B219DC05F0017981A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0B4590C219DC05F0017981A /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				A03014C6219B34BC00A40704 /* Assets.xcassets */,
 				A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */,
 				A03014CB219B34BC00A40704 /* Info.plist */,
+				A0B4590B219DC05F0017981A /* ViewController.swift */,
+				A0B4590C219DC05F0017981A /* ViewController.xib */,
 			);
 			path = "Tempo-ios-sdk";
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */,
+				A0B4590E219DC05F0017981A /* ViewController.xib in Resources */,
 				A03014C7219B34BC00A40704 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B4590D219DC05F0017981A /* ViewController.swift in Sources */,
 				A03014C0219B34BA00A40704 /* AppDelegate.swift in Sources */,
 				A03014D3219B351C00A40704 /* MapViewController.swift in Sources */,
 			);
