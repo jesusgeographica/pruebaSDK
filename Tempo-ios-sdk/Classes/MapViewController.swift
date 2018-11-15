@@ -8,6 +8,7 @@
 
 import UIKit
 import GLKit
+import Alamofire
 
 open class MapViewController: GLKViewController {
     
@@ -51,5 +52,5 @@ open class MapViewController: GLKViewController {
     func initMap(){
         NTLog.setShowInfo(true)
         NTMapView.registerLicense(License)
-    }*/
-}
+    }
+}*/
