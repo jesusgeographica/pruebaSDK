@@ -25,7 +25,7 @@ iOS library for indoor mapping using GeoJSON.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aragón' => 'javier.aragon@geographica.gs' }
-  s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git', :branch => 'cpoy-master'}
+  s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git', :branch => 'copy-master'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
