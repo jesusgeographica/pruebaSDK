@@ -32,7 +32,7 @@ iOS library for indoor mapping using GeoJSON.
 
   s.swift_version = '4.2'
 
-  s.source_files = 'Tempo-ios-sdk/**/*'
+  s.source_files = 'Tempo-ios-sdk'
   #s.preserve_path = '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h'
   #s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PROJECT_DIR)' }
   #s.library  = 'c++.tbd', 'z.tbd'
