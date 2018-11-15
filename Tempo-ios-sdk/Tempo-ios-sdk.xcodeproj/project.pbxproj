@@ -13,7 +13,7 @@
 		A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */; };
 		A03014D3219B351C00A40704 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014D1219B351C00A40704 /* MapViewController.swift */; };
 		A03014D5219B359500A40704 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03014D4219B359500A40704 /* GLKit.framework */; };
-		A0AE3647219DC9CF00EC729E /* CartoMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AE3646219DC9CF00EC729E /* CartoMobileSDK.framework */; };
+		A0AE3645219DC90700EC729E /* CartoMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AE3644219DC90700EC729E /* CartoMobileSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		A03014D4219B359500A40704 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		A03014D6219B359A00A40704 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A03014D8219B35A000A40704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		A0AE3646219DC9CF00EC729E /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CartoMobileSDK.framework; path = "../Tempo-ios-sdk/CartoMobileSDK.framework"; sourceTree = "<group>"; };
+		A0AE3644219DC90700EC729E /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CartoMobileSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0064BC5219D56C800569D38 /* libc++.tbd in Frameworks */,
-				A0AE3647219DC9CF00EC729E /* CartoMobileSDK.framework in Frameworks */,
+				A0AE3645219DC90700EC729E /* CartoMobileSDK.framework in Frameworks */,
 				A03014D5219B359500A40704 /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +47,7 @@
 		153954F21D77F423493B6C70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0AE3646219DC9CF00EC729E /* CartoMobileSDK.framework */,
+				A0AE3644219DC90700EC729E /* CartoMobileSDK.framework */,
 				A03014D8219B35A000A40704 /* libz.tbd */,
 				A03014D6219B359A00A40704 /* libc++.tbd */,
 				A03014D4219B359500A40704 /* GLKit.framework */,
