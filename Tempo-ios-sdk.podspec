@@ -25,7 +25,7 @@ iOS library for indoor mapping using GeoJSON.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aragón' => 'javier.aragon@geographica.gs' }
-  s.source           = { :git => 'git@github.com:GeographicaGS/Tempo-ios-sdk.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jesusgeographica/pruebaSDK'}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
