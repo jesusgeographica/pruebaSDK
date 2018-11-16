@@ -40,7 +40,7 @@ iOS library for indoor mapping using GeoJSON.
   s.library = 'z', 'c++'
   s.module_name = 'TempoSDK'
   s.frameworks = 'GLKit'
-  s.dependency 'CartoMobileSDK', '4.1.4'
+  #s.dependency 'CartoMobileSDK', '4.1.4'
   s.dependency 'Alamofire'
 
 end
