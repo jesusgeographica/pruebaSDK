@@ -25,7 +25,7 @@ iOS library for indoor mapping using GeoJSON.
   s.swift_version = '4.2'
 
   s.source_files = 'Tempo-ios-sdk/**/*'
-  s.ios.vendored_frameworks = 'TempoSDK/Framework/CartoMobileSDK.framework'
+  s.ios.vendored_frameworks = 'Tempo-ios-sdk/Framework/CartoMobileSDK.framework'
   s.requires_arc = true
   s.frameworks = 'GLKit', 'CartoMobileSDK'
   s.libraries = 'z', 'c++'
