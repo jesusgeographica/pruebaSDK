@@ -1,6 +1,5 @@
 # Tempo-ios-sdk
 
-[![CI Status](https://img.shields.io/travis/Javier Aragón/Tempo-ios-sdk.svg?style=flat)](https://travis-ci.org/Javier Aragón/Tempo-ios-sdk)
 [![Version](https://img.shields.io/cocoapods/v/Tempo-ios-sdk.svg?style=flat)](https://cocoapods.org/pods/Tempo-ios-sdk)
 [![License](https://img.shields.io/cocoapods/l/Tempo-ios-sdk.svg?style=flat)](https://cocoapods.org/pods/Tempo-ios-sdk)
 [![Platform](https://img.shields.io/cocoapods/p/Tempo-ios-sdk.svg?style=flat)](https://cocoapods.org/pods/Tempo-ios-sdk)
@@ -13,36 +12,36 @@ it, simply add the following line to your Podfile:
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 source 'git@github.com:GeographicaGS/ios-specs.git'
-pod 'Tempo-ios-sdk'
+pod 'TempoSDK'
 ```
 Add the following line to your Info.plist
 
 ```ruby
-MGLMapboxAccessToken API_KEY
+CartoLicence API_KEY
+apisecret API_SECRET_TO_JWT
 ```
 
 ## Example
 
 ```ruby
 import UIKit
-import Tempo_ios_sdk
+import TempoSDK
 
-class ViewController: UIViewController {
+class ViewController: MapViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let mapView = UIMapView.init(frame: view.bounds)
-        view.addSubview(mapView)
-    }
-
-
+override func viewDidLoad() {
+super.viewDidLoad()
+initMap()
+loadMap()
+}
 }
 ```
 
 ## Author
 
 Javier Aragón, javier.aragon@geographica.gs
+Jesús Victorio, jesus.victorio@geographica.gs
 
 ## License
 
-Tempo-ios-sdk is available under the MIT license. See the LICENSE file for more info.
+TempoSDK is available under the MIT license. See the LICENSE file for more info.
