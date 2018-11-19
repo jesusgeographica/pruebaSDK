@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Tempo-ios-sdk'
+  s.name             = 'TempoSDK'
   s.version          = '0.1.1'
   s.summary          = 'iOS library for indoor mapping.'
 
@@ -24,9 +24,9 @@ iOS library for indoor mapping using GeoJSON.
 
   s.swift_version = '4.2'
 
-  s.source_files = 'Tempo-ios-sdk/Classes/*'
-  s.ios.vendored_frameworks = 'Tempo-ios-sdk/Frameworks/CartoMobileSDK.framework'
-  s.preserve_path = 'Tempo-ios-sdk/Frameworks/*'
+  s.source_files = 'TempoSDK/Classes/*'
+  s.ios.vendored_frameworks = 'TempoSDK/Frameworks/CartoMobileSDK.framework'
+  s.preserve_path = 'TempoSDK/Frameworks/*'
   s.requires_arc = true
   s.frameworks = 'GLKit', 'CartoMobileSDK'
   s.libraries = 'z', 'c++'
