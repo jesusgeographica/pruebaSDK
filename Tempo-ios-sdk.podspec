@@ -11,33 +11,23 @@ Pod::Spec.new do |s|
   s.version          = '0.1.1'
   s.summary          = 'iOS library for indoor mapping.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
 iOS library for indoor mapping using GeoJSON.
                        DESC
 
   s.homepage         = 'https://github.com/GeographicaGS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aragón' => 'javier.aragon@geographica.gs' }
   s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git', :branch => 'copy-master'}
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.swift_version = '4.2'
 
   s.source_files = 'Tempo-ios-sdk/**/*'
-  #s.preserve_path = '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h'
-  #s.xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PROJECT_DIR)' }
-  #s.library  = 'c++.tbd', 'z.tbd'
-  #s.xcconfig = { 'SWIFT_OBJC_BRIDGING_HEADER' => '${POD_ROOT}/Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h' }
-  #s.module_name = 'Tempo-ios-sdk'
-  #s.frameworks = 'GLKit'
+  s.ios.vendored_frameworks = 'TempoSDK/Framework/CartoMobileSDK.framework'
+  s.requires_arc = true
+  s.frameworks = 'GLKit', 'CartoMobileSDK'
+  s.libraries = 'z', 'c++'
 
 end
