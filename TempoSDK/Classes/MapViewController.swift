@@ -1,16 +1,18 @@
 //
 //  ViewController.swift
-//  Tempo-ios-example
+//  Tempo-ios-sdk
 //
 //  Created by Jesus Victorio on 12/11/2018.
 //  Copyright © 2018 Geographica. All rights reserved.
 //
 
 import UIKit
+import GLKit
+import CartoMobileSDK
 
-class MapViewController: GLKViewController {
+open class MapViewController: GLKViewController {
     
-    private let License = "XTUM0Q0ZRQ1JqaHpudExBaXI4MVRoeFYwdDF1bjNsU2xjd0lWQUtWOVlLTWFhRkwwTUYzWVJaNTJ1MzY2TWdtMAoKYXBwVG9rZW49OTQ4NDE5ODctODA5Mi00OTBlLTkwNDQtNzZlZWRkYWI3YmZhCmJ1bmRsZUlkZW50aWZpZXI9Z3MuZ2VvZ3JhcGhpY2EudGVtcG9zZGsKb25saW5lTGljZW5zZT0xCnByb2R1Y3RzPXNkay1pb3MtNC4qCndhdGVybWFyaz1jYXJ0b2RiCg==";
+    private var license = ""
     
     var mapView: NTMapView?
     var marker: NTMarker?
@@ -20,28 +22,29 @@ class MapViewController: GLKViewController {
     
     var zoom : Float = 15
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
     }
     
-    func loadMap(){
+    public func loadMap(){
         mapView = NTMapView()
         view = mapView
-        
+
         let baseLayer = NTCartoOnlineVectorTileLayer(style: NTCartoBaseMapStyle.CARTO_BASEMAP_STYLE_VOYAGER)
         mapView?.getLayers().add(baseLayer)
-        
+
         let projection = mapView?.getOptions().getBaseProjection()
         let tallinn = projection?.fromLat(lat, lng: lng)
-        
+
         mapView?.setFocus(tallinn, durationSeconds: 0)
         mapView?.setZoom(zoom, durationSeconds: 0)
     }
     
-    func initMap(){
+    public func initMap(licenceCarto: String){
+        license = licenceCarto
         NTLog.setShowInfo(true)
-        NTMapView.registerLicense(License)
+        NTMapView.registerLicense(license)
     }
 }
