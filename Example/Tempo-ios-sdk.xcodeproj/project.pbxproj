@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218BF2B08D4EEA309296F46D /* libPods-Tempo-ios-sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE8F3A4C62CA50424A69680 /* libPods-Tempo-ios-sdk.a */; };
 		A0064BC5219D56C800569D38 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A03014D6219B359A00A40704 /* libc++.tbd */; };
 		A03014C0219B34BA00A40704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014BF219B34BA00A40704 /* AppDelegate.swift */; };
 		A03014C7219B34BC00A40704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03014C6219B34BC00A40704 /* Assets.xcassets */; };
@@ -28,6 +29,9 @@
 		A03014D6219B359A00A40704 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A03014D8219B35A000A40704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A0AE3646219DC9CF00EC729E /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CartoMobileSDK.framework; path = "../Tempo-ios-sdk/CartoMobileSDK.framework"; sourceTree = "<group>"; };
+		B3041D36969943347DCB4DEF /* Pods-Tempo-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk/Pods-Tempo-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		C939E76C3EBB20D897F0ACA5 /* Pods-Tempo-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk/Pods-Tempo-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		DCE8F3A4C62CA50424A69680 /* libPods-Tempo-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tempo-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 				A0064BC5219D56C800569D38 /* libc++.tbd in Frameworks */,
 				A0AE3647219DC9CF00EC729E /* CartoMobileSDK.framework in Frameworks */,
 				A03014D5219B359500A40704 /* GLKit.framework in Frameworks */,
+				218BF2B08D4EEA309296F46D /* libPods-Tempo-ios-sdk.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +56,18 @@
 				A03014D8219B35A000A40704 /* libz.tbd */,
 				A03014D6219B359A00A40704 /* libc++.tbd */,
 				A03014D4219B359500A40704 /* GLKit.framework */,
+				DCE8F3A4C62CA50424A69680 /* libPods-Tempo-ios-sdk.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A5A83F7D012095657DB9D1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C939E76C3EBB20D897F0ACA5 /* Pods-Tempo-ios-sdk.debug.xcconfig */,
+				B3041D36969943347DCB4DEF /* Pods-Tempo-ios-sdk.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A03014B3219B34BA00A40704 = {
@@ -61,6 +76,7 @@
 				A03014BE219B34BA00A40704 /* Tempo-ios-sdk */,
 				A03014BD219B34BA00A40704 /* Products */,
 				153954F21D77F423493B6C70 /* Frameworks */,
+				2A5A83F7D012095657DB9D1F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A03014CE219B34BC00A40704 /* Build configuration list for PBXNativeTarget "Tempo-ios-sdk" */;
 			buildPhases = (
+				28CA419F8FD902FF49ED0ECC /* [CP] Check Pods Manifest.lock */,
 				A03014B8219B34BA00A40704 /* Sources */,
 				A03014B9219B34BA00A40704 /* Frameworks */,
 				A03014BA219B34BA00A40704 /* Resources */,
@@ -149,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28CA419F8FD902FF49ED0ECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tempo-ios-sdk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A03014B8219B34BA00A40704 /* Sources */ = {
@@ -292,6 +334,7 @@
 		};
 		A03014CF219B34BC00A40704 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C939E76C3EBB20D897F0ACA5 /* Pods-Tempo-ios-sdk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +359,7 @@
 		};
 		A03014D0219B34BC00A40704 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3041D36969943347DCB4DEF /* Pods-Tempo-ios-sdk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

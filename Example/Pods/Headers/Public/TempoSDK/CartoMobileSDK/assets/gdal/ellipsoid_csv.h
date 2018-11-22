@@ -1,0 +1,1 @@
+../../../../../../../../TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/assets/gdal/ellipsoid_csv.h

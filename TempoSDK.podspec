@@ -32,22 +32,22 @@ iOS library for indoor mapping using GeoJSON.
   s.libraries = 'z', 'c++'
   s.script_phase = {
 	:name => 'CartoMobileSDK',
-	:script => 'CARTOMOBILESDK_DIR="${PROJECT_DIR}/TempoSDK/CartoMobileSDK"
+	:script => 'CARTOMOBILESDK_DIR="${PROJECT_DIR}/TempoSDK/Frameworks/CartoMobileSDK"
 				if [ -f "${CARTOMOBILESDK_DIR}/module.modulemap" ]
 				then
 				echo "CartoMobileSDK already exists, skipping"
 				else
-				FRAMEWORK_DIR="${BUILT_PRODUCTS_DIR}/CartoMobileSDK.framework"
+				FRAMEWORK_DIR="${BUILT_PRODUCTS_DIR}/Frameworks/CartoMobileSDK.framework"
 				if [ -d "${FRAMEWORK_DIR}" ]; then
 				echo "${FRAMEWORK_DIR} already exists, so skipping the rest of the script."
 				exit 0
 				fi
 				mkdir -p "${FRAMEWORK_DIR}/Modules"
 				echo "module CartoMobileSDK [system] {
-				header \"${PROJECT_DIR}/TempoSDK/CartoMobileSDK.framework/Versions/A/Headers/CartoMobileSDK.h\"
+				header \"${PROJECT_DIR}/TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/CartoMobileSDK.h\"
 				export *
-				}" >> "${FRAMEWORK_DIR}/Modules/module.modulemap"
-				ln -sf "${PROJECT_DIR}/TempoSDK/CartoMobileSDK" "${FRAMEWORK_DIR}/Headers"
+				}" >> "${FRAMEWORK_DIR}/Frameworks/Modules/module.modulemap"
+				ln -sf "${PROJECT_DIR}/TempoSDK/Frameworks/CartoMobileSDK" "${FRAMEWORK_DIR}/Headers"
 				fi',
 	:execution_position => :before_compile
   }

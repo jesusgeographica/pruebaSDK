@@ -1,0 +1,1 @@
+../../../../../../TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/NTPopupClickInfo.h
