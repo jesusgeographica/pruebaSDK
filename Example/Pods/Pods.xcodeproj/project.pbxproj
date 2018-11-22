@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,28 +34,28 @@
 		0E74E9AB46CCBF21F2E3AE016F622625 /* Tempo-ios-sdk-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Tempo-ios-sdk-Bridging-Header.h"; path = "TempoSDK/Classes/Tempo-ios-sdk-Bridging-Header.h"; sourceTree = "<group>"; };
 		1EE06155B89169807322D195FA50A366 /* TempoSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = TempoSDK.modulemap; path = ../../Headers/Public/TempoSDK/TempoSDK.modulemap; sourceTree = "<group>"; };
 		2E3EFD0C2B0987BBB1AC9EA9723BDABF /* TempoSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TempoSDK-dummy.m"; sourceTree = "<group>"; };
-		369AE58D29E395ECA62913B2089CC8CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		369AE58D29E395ECA62913B2089CC8CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3EF97328B0A4F32231C946907D9DDDAA /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CartoMobileSDK.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CartoMobileSDK.framework; sourceTree = DEVELOPER_DIR; };
 		51D84377A50CDAC9566F615DF1BAF8BC /* TempoSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TempoSDK-prefix.pch"; sourceTree = "<group>"; };
 		565FADD2BF7F8ED97AF1B72EE8BBF27E /* TempoSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TempoSDK-umbrella.h"; path = "../../Headers/Public/TempoSDK/TempoSDK-umbrella.h"; sourceTree = "<group>"; };
 		66E783F1BB1CF5F93172B2C83AB002EC /* MapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = TempoSDK/Classes/MapViewController.swift; sourceTree = "<group>"; };
-		69AD1FFC0969FAC186F1C027ABD01EE0 /* libPods-Tempo-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Tempo-ios-sdk.a"; path = "libPods-Tempo-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69AD1FFC0969FAC186F1C027ABD01EE0 /* libPods-Tempo-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tempo-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCB57826C04AD245442D4BC5296790B /* Pods-Tempo-ios-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tempo-ios-sdk-dummy.m"; sourceTree = "<group>"; };
 		79AB12D37E4036A75E22E4043544E700 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
 		9359F1AE35A77D29587854AA885470EB /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CartoMobileSDK.framework; path = TempoSDK/Frameworks/CartoMobileSDK.framework; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98FC446A2D197B6957832DE50B962F96 /* Pods-Tempo-ios-sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tempo-ios-sdk.modulemap"; sourceTree = "<group>"; };
 		9C38169BA2879F4467693F6FEF56D378 /* Pods-Tempo-ios-sdk-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tempo-ios-sdk-acknowledgements.plist"; sourceTree = "<group>"; };
-		A3378C0907CC5AB811239552803AE28D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A3378C0907CC5AB811239552803AE28D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A6CA2CF65E9DD833EFB464AFD27F9F07 /* Pods-Tempo-ios-sdk-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tempo-ios-sdk-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACF0E3A422261FC499E60A3E7171BAA4 /* TempoSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TempoSDK.xcconfig; sourceTree = "<group>"; };
 		AEF1416BFA6E39FAAAE11F68A68B689A /* TempoConstant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TempoConstant.swift; path = TempoSDK/Classes/TempoConstant.swift; sourceTree = "<group>"; };
-		B82853A28D80D405A8B57E4624292CEF /* template.md */ = {isa = PBXFileReference; includeInIndex = 1; name = template.md; path = docs/reference/template.md; sourceTree = "<group>"; };
+		B82853A28D80D405A8B57E4624292CEF /* template.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = template.md; path = docs/reference/template.md; sourceTree = "<group>"; };
 		BEF2862342B167534ACC990A8451287A /* Pods-Tempo-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tempo-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		CF611424D0E1E00020ABB783F36C154E /* Pods-Tempo-ios-sdk-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tempo-ios-sdk-frameworks.sh"; sourceTree = "<group>"; };
-		D15E7C6218C466DDA4BABBED2E3E0FA7 /* index.md */ = {isa = PBXFileReference; includeInIndex = 1; name = index.md; path = docs/index.md; sourceTree = "<group>"; };
-		DC456B8AB0F5CB0485F61AD479F1FFD4 /* libTempoSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTempoSDK.a; path = libTempoSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5A781E3F6444E114E58E90483733938 /* TempoSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = TempoSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D15E7C6218C466DDA4BABBED2E3E0FA7 /* index.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = index.md; path = docs/index.md; sourceTree = "<group>"; };
+		DC456B8AB0F5CB0485F61AD479F1FFD4 /* libTempoSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTempoSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5A781E3F6444E114E58E90483733938 /* TempoSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = TempoSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E91E925D08D52C37466D30B1E978B504 /* Pods-Tempo-ios-sdk-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tempo-ios-sdk-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,7 +242,7 @@
 			buildConfigurationList = E74470F6787F10C2904C7AF5CE7B3982 /* Build configuration list for PBXNativeTarget "TempoSDK" */;
 			buildPhases = (
 				4845CDD3D4A4015BA8C8CAD55A793ECE /* Headers */,
-				01F53F3BB89123F27CBBC814A4D270C5 /* [CP-User] CartoMobileSDK */,
+				903A38CC11C116441153020AEB96BB99 /* [CP-User] CartoMobileSDK */,
 				00E041812E86D6D624FB89F6EB6D1F6B /* Sources */,
 				E4CD0064ED114BDAE6610AAA2C3F8CC9 /* Frameworks */,
 				D1677885AEFC399D725747B54AD113E9 /* Copy generated compatibility header */,
@@ -284,7 +284,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01F53F3BB89123F27CBBC814A4D270C5 /* [CP-User] CartoMobileSDK */ = {
+		903A38CC11C116441153020AEB96BB99 /* [CP-User] CartoMobileSDK */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -300,7 +300,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "CARTOMOBILESDK_DIR=\"${PROJECT_DIR}/TempoSDK/CartoMobileSDK\"\n\t\t\t\tif [ -f \"${CARTOMOBILESDK_DIR}/module.modulemap\" ]\n\t\t\t\tthen\n\t\t\t\techo \"CartoMobileSDK already exists, skipping\"\n\t\t\t\telse\n\t\t\t\tFRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/CartoMobileSDK.framework\"\n\t\t\t\tif [ -d \"${FRAMEWORK_DIR}\" ]; then\n\t\t\t\techo \"${FRAMEWORK_DIR} already exists, so skipping the rest of the script.\"\n\t\t\t\texit 0\n\t\t\t\tfi\n\t\t\t\tmkdir -p \"${FRAMEWORK_DIR}/Modules\"\n\t\t\t\techo \"module CartoMobileSDK [system] {\n\t\t\t\theader \\\"${PROJECT_DIR}/TempoSDK/CartoMobileSDK.framework/Versions/A/Headers/CartoMobileSDK.h\\\"\n\t\t\t\texport *\n\t\t\t\t}\" >> \"${FRAMEWORK_DIR}/Modules/module.modulemap\"\n\t\t\t\tln -sf \"${PROJECT_DIR}/TempoSDK/CartoMobileSDK\" \"${FRAMEWORK_DIR}/Headers\"\n\t\t\t\tfi";
+			shellScript = "CARTOMOBILESDK_DIR=\"${PROJECT_DIR}/TempoSDK/Frameworks/CartoMobileSDK\"\n                if [ -f \"${CARTOMOBILESDK_DIR}/module.modulemap\" ]\n                then\n                echo \"CartoMobileSDK already exists, skipping\"\n                else\n                FRAMEWORK_DIR=\"${BUILT_PRODUCTS_DIR}/Frameworks/CartoMobileSDK.framework\"\n                if [ -d \"${FRAMEWORK_DIR}\" ]; then\n                echo \"${FRAMEWORK_DIR} already exists, so skipping the rest of the script.\"\n                exit 0\n                fi\n                mkdir -p \"${FRAMEWORK_DIR}/Modules\"\n                echo \"module CartoMobileSDK [system] {\n                header \\\"${PROJECT_DIR}/TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/CartoMobileSDK.h\\\"\n                export *\n                }\" >> \"${FRAMEWORK_DIR}/Frameworks/Modules/module.modulemap\"\n                ln -sf \"${PROJECT_DIR}/TempoSDK/Frameworks/CartoMobileSDK\" \"${FRAMEWORK_DIR}/Headers\"\n                fi\n";
 			showEnvVarsInLog = 0;
 		};
 		D1677885AEFC399D725747B54AD113E9 /* Copy generated compatibility header */ = {
@@ -326,7 +326,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/TempoSDK/TempoSDK.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/TempoSDK/TempoSDK-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -582,8 +581,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

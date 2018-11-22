@@ -12,9 +12,10 @@
 		A03014C0219B34BA00A40704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014BF219B34BA00A40704 /* AppDelegate.swift */; };
 		A03014C7219B34BC00A40704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03014C6219B34BC00A40704 /* Assets.xcassets */; };
 		A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */; };
-		A03014D3219B351C00A40704 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03014D1219B351C00A40704 /* MapViewController.swift */; };
 		A03014D5219B359500A40704 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03014D4219B359500A40704 /* GLKit.framework */; };
 		A0AE3647219DC9CF00EC729E /* CartoMobileSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0AE3646219DC9CF00EC729E /* CartoMobileSDK.framework */; };
+		A0B8BDF721A6884600BAEF8F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B8BDF521A6884600BAEF8F /* ViewController.xib */; };
+		A0B8BDF821A6884600BAEF8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8BDF621A6884600BAEF8F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +24,12 @@
 		A03014C6219B34BC00A40704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03014C9219B34BC00A40704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A03014CB219B34BC00A40704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A03014D1219B351C00A40704 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		A03014D2219B351C00A40704 /* Tempo-ios-sdk-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tempo-ios-sdk-Bridging-Header.h"; sourceTree = "<group>"; };
 		A03014D4219B359500A40704 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		A03014D6219B359A00A40704 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A03014D8219B35A000A40704 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A0AE3646219DC9CF00EC729E /* CartoMobileSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CartoMobileSDK.framework; path = "../Tempo-ios-sdk/CartoMobileSDK.framework"; sourceTree = "<group>"; };
+		A0B8BDF521A6884600BAEF8F /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A0B8BDF621A6884600BAEF8F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B3041D36969943347DCB4DEF /* Pods-Tempo-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk/Pods-Tempo-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
 		C939E76C3EBB20D897F0ACA5 /* Pods-Tempo-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tempo-ios-sdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tempo-ios-sdk/Pods-Tempo-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
 		DCE8F3A4C62CA50424A69680 /* libPods-Tempo-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tempo-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,9 +92,9 @@
 		A03014BE219B34BA00A40704 /* Tempo-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
-				A03014D2219B351C00A40704 /* Tempo-ios-sdk-Bridging-Header.h */,
+				A0B8BDF621A6884600BAEF8F /* ViewController.swift */,
+				A0B8BDF521A6884600BAEF8F /* ViewController.xib */,
 				A03014BF219B34BA00A40704 /* AppDelegate.swift */,
-				A03014D1219B351C00A40704 /* MapViewController.swift */,
 				A03014C6219B34BC00A40704 /* Assets.xcassets */,
 				A03014C8219B34BC00A40704 /* LaunchScreen.storyboard */,
 				A03014CB219B34BC00A40704 /* Info.plist */,
@@ -161,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A03014CA219B34BC00A40704 /* LaunchScreen.storyboard in Resources */,
+				A0B8BDF721A6884600BAEF8F /* ViewController.xib in Resources */,
 				A03014C7219B34BC00A40704 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,8 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B8BDF821A6884600BAEF8F /* ViewController.swift in Sources */,
 				A03014C0219B34BA00A40704 /* AppDelegate.swift in Sources */,
-				A03014D3219B351C00A40704 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gs.geographica.temposdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -376,7 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = gs.geographica.temposdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tempo-ios-sdk/Tempo-ios-sdk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
