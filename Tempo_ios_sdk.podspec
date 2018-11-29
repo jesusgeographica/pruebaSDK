@@ -24,8 +24,11 @@ Pod::Spec.new do |s|
   s.resources = "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld}"
 
   s.resource_bundles = {
+    'fonts' => [
+        'Pod/**/*.zip'
+    ],
     'FloorView' => [
-        'Tempo_ios_sdk/**/*.xib'
+        'Pod/**/*.xib'
     ],
     'MapContentViewController' => [
         'Tempo_ios_sdk/**/*.xib'
