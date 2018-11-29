@@ -23,13 +23,13 @@ Pod::Spec.new do |s|
   s.source_files = 'Tempo_ios_sdk/src/**/*.{swift,h,m}'
   s.resources = "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld}"
 
-  s.resource_bundles = {
-    'recursos' => [
-          'Tempo_ios_sdk/**/*.xib',
-          'Tempo_ios_sdk/**/*.xcdatamodeld',
-          'Tempo_ios_sdk/**/*.zip'
-    ]
-  }
+#  s.resource_bundles = {
+#    'recursos' => [
+#          'Tempo_ios_sdk/**/*.xib',
+#          'Tempo_ios_sdk/**/*.xcdatamodeld',
+#          'Tempo_ios_sdk/**/*.zip'
+#    ]
+#  }
 
   s.requires_arc = true
   s.libraries = 'z', 'c++'
@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.subspec 'Assets' do |ss|
     ss.resource_bundle = {
       'recursos' => [
-        'Tempo_ios_sdk/**/*.{png,jpg,jpeg}',
+        'Tempo_ios_sdk/**/*.{png,jpg,jpeg,xib,zip}',
       ]
     }
   end
