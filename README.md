@@ -6,34 +6,34 @@
 
 ## Installation
 
-Tempo-ios-sdk is available through [CocoaPods]. To install
+Tempo_ios_sdk is available through [CocoaPods]. To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 source 'git@github.com:GeographicaGS/ios-specs.git'
-pod 'TempoSDK'
+pod 'Tempo_ios_sdk'
 ```
 Add the following line to your Info.plist
 
 ```ruby
-CartoLicence API_KEY
-apisecret API_SECRET_TO_JWT
+TempoLicenceCarto API_KEY
+TempoApiSecret API_SECRET_TO_JWT
 ```
 
 ## Example
 
 ```ruby
 import UIKit
-import TempoSDK
+import Tempo_ios_sdk
 
 class ViewController: MapViewController {
 
 override func viewDidLoad() {
-super.viewDidLoad()
-initMap()
-loadMap()
-}
+    super.viewDidLoad()
+
+    createMap()
+    }
 }
 ```
 
@@ -44,4 +44,4 @@ Jesús Victorio, jesus.victorio@geographica.gs
 
 ## License
 
-TempoSDK is available under the MIT license. See the LICENSE file for more info.
+Tempo_ios_sdk is available under the MIT license. See the LICENSE file for more info.

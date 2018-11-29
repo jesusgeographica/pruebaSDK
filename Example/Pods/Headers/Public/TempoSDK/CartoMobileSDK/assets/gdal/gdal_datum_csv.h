@@ -1,1 +1,0 @@
-../../../../../../../../TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/assets/gdal/gdal_datum_csv.h

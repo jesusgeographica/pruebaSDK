@@ -2,8 +2,8 @@
 platform :ios, '10.0'
 
 
-target 'Tempo-ios-sdk' do
-  	#use_frameworks!
-	pod 'TempoSDK', :path => '..'
-
+target 'TempoExample' do
+    #use_frameworks!
+	pod 'Tempo_ios_sdk', :path => '..'
+    pod 'SideMenu'
 end

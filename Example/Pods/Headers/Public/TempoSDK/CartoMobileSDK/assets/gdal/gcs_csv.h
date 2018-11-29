@@ -1,1 +1,0 @@
-../../../../../../../../TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/assets/gdal/gcs_csv.h

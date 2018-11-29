@@ -1,0 +1,6 @@
+module Pods_TempoExample {
+  umbrella header "Pods-TempoExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

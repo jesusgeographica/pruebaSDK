@@ -1,0 +1,6 @@
+module SwiftyCrypto {
+  umbrella header "SwiftyCrypto-umbrella.h"
+
+  export *
+  module * { export * }
+}

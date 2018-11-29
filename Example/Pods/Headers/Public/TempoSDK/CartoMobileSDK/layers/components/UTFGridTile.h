@@ -1,1 +1,0 @@
-../../../../../../../../TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/layers/components/UTFGridTile.h

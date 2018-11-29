@@ -1,1 +1,0 @@
-../../../../../../TempoSDK/Frameworks/CartoMobileSDK.framework/Versions/A/Headers/NTMapVec.h
