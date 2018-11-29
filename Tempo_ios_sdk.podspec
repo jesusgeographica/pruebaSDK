@@ -20,13 +20,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
 
-  s.source_files = 'Tempo_ios_sdk/src/**/*.{swift,h,m}'
-  s.resources = "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld}"
+  s.source_files = 'Tempo_ios_sdk/src/**/*.{swift,h,m,zip}'
+  s.resources = "Tempo_ios_sdk/src/**/*.{xib,png,xcdatamodeld}"
 
   s.resource_bundles = {
-    'fonts' => [
-        'Pod/**/*.zip'
-    ],
     'FloorView' => [
         'Pod/**/*.xib'
     ],
