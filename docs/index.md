@@ -1,7 +1,9 @@
-# Tempo Android SDK
+# Tempo iOS SDK
 
-Welcome to the Tempo Android SDK docs.
+Welcome to the Tempo iOS SDK docs.
 
 ## API Reference
 
-- [Template](reference/template.md)
+- [Installation](reference/init.md)
+- [Services](reference/services.md)
+- [Examples](reference/mbtiles.md)

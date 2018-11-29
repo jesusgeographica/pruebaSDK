@@ -1,0 +1,8 @@
+framework module CartoMobileSDK {
+    umbrella header "CartoMobileSDK.h"
+    link "CartoMobileSDK"
+    
+    export *
+    module * { export * }
+    
+}

@@ -1,0 +1,6 @@
+module SwiftyJWT {
+  umbrella header "SwiftyJWT-umbrella.h"
+
+  export *
+  module * { export * }
+}

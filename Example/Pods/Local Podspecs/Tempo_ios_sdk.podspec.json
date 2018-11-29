@@ -1,0 +1,67 @@
+{
+  "name": "Tempo_ios_sdk",
+  "version": "0.1.2",
+  "summary": "iOS library for indoor mapping.",
+  "description": "iOS library for indoor mapping using GeoJSON.",
+  "homepage": "https://github.com/GeographicaGS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Javier Aragón": "javier.aragon@geographica.gs",
+    "Jesús Victorio": "jesus.victorio@geographica.gs"
+  },
+  "source": {
+    "git": "git@github.com:GeographicaGS/Tempo-ios-sdk.git",
+    "tag": "0.1.2"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_version": "4.2",
+  "source_files": "Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld}",
+  "resources": "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld}",
+  "resource_bundles": {
+    "FloorView": [
+      "Tempo_ios_sdk/**/*.xib"
+    ],
+    "MapContentViewController": [
+      "Pod/**/*.xib"
+    ],
+    "HeaderCollectionFloorView": [
+      "Pod/**/*.xib"
+    ],
+    "Model": [
+      "Pod/**/*.xcdatamodeld"
+    ]
+  },
+  "requires_arc": true,
+  "libraries": [
+    "z",
+    "c++"
+  ],
+  "frameworks": [
+    "GLKit",
+    "CoreData",
+    "CartoMobileSDK"
+  ],
+  "ios": {
+    "vendored_frameworks": "Tempo_ios_sdk/Frameworks/CartoMobileSDK.framework"
+  },
+  "preserve_paths": "Tempo_ios_sdk/Frameworks/*",
+  "dependencies": {
+    "AlamofireObjectMapper": [
+      "~> 5.2"
+    ],
+    "SwiftyJWT": [
+      "~> 0.0.3"
+    ],
+    "SSZipArchive": [
+      "~> 2.1"
+    ],
+    "BottomPopup": [
+      "~> 0.4"
+    ]
+  }
+}

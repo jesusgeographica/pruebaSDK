@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapContentViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="lbDescription" destination="aYr-f5-UAd" id="Ijx-r4-aGA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exit.png" translatesAutoresizingMaskIntoConstraints="NO" id="oa2-kC-NqZ">
+                    <rect key="frame" x="330" y="50" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="KBa-uJ-3Xh"/>
+                        <constraint firstAttribute="height" constant="25" id="YmP-MH-N2f"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmA-fz-JMv">
+                    <rect key="frame" x="327.5" y="45.5" width="30" height="34"/>
+                    <connections>
+                        <action selector="dismissButtonTapped:" destination="-1" eventType="touchUpInside" id="BEq-eY-dip"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYr-f5-UAd">
+                    <rect key="frame" x="166.5" y="52" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EmA-fz-JMv" firstAttribute="centerY" secondItem="oa2-kC-NqZ" secondAttribute="centerY" id="1qI-hz-eqd"/>
+                <constraint firstItem="EmA-fz-JMv" firstAttribute="centerX" secondItem="oa2-kC-NqZ" secondAttribute="centerX" id="Bq0-PG-TSG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oa2-kC-NqZ" secondAttribute="trailing" constant="20" id="a16-A2-qtS"/>
+                <constraint firstItem="aYr-f5-UAd" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="hSp-uu-sB8"/>
+                <constraint firstItem="aYr-f5-UAd" firstAttribute="centerY" secondItem="EmA-fz-JMv" secondAttribute="centerY" id="i7H-YZ-HtD"/>
+                <constraint firstItem="EmA-fz-JMv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aYr-f5-UAd" secondAttribute="trailing" constant="10" id="mJ5-Pg-rlx"/>
+                <constraint firstItem="oa2-kC-NqZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="ve1-k4-e73"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-218.40000000000001" y="98.50074962518741"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exit.png" width="208" height="208"/>
+    </resources>
+</document>

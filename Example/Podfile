@@ -2,8 +2,8 @@
 platform :ios, '10.0'
 
 
-target 'Tempo-ios-sdk' do
-  	use_frameworks!
-	pod 'CartoMobileSDK', '4.1.4'
-
+target 'TempoExample' do
+    #use_frameworks!
+	pod 'Tempo_ios_sdk', :path => '..'
+    pod 'SideMenu'
 end
