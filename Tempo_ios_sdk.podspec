@@ -24,10 +24,17 @@ Pod::Spec.new do |s|
   s.resources = "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld}"
 
   s.resource_bundles = {
-    'recursos' => [
-          'Tempo_ios_sdk/**/*.xib',
-          'Tempo_ios_sdk/**/*.xcdatamodeld',
-          'Tempo_ios_sdk/**/*.zip'
+    'FloorView' => [
+        'Tempo_ios_sdk/**/*.xib'
+    ],
+    'MapContentViewController' => [
+        'Tempo_ios_sdk/**/*.xib'
+    ],
+    'HeaderCollectionFloorView' => [
+        'Tempo_ios_sdk/**/*.xib'
+    ],
+    'Model' => [
+        'Tempo_ios_sdk/**/*.xcdatamodeld'
     ]
   }
 
@@ -41,8 +48,6 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftyJWT', '~> 0.0.3'
   s.dependency 'SSZipArchive', '~> 2.1'
   s.dependency 'BottomPopup', '~> 0.4'
-
-  end
 
     s.prepare_command = <<-CMD
                           echo "Downloading CartoMobileSDK, please wait..."
