@@ -147,7 +147,6 @@ public class TempoMap {
                 "marker-fill: #8b7e6a;" +
                 "marker-fill-opacity: 1;" +
                 "marker-allow-overlap: false;" +
-                "marker-clip: false;" +
                 "marker-line-width: 1.25;" +
                 "marker-line-color: #ffffff;" +
                 "marker-line-opacity: 0.8;" +
@@ -158,7 +157,6 @@ public class TempoMap {
                 "marker-width: 24;" +
                 "marker-fill-opacity: 1;" +
                 "marker-allow-overlap: false;" +
-                "marker-clip: false;" +
                 "[type='PERIMETRO']{" +
                 "marker-width: 0;" +
             "}" +
@@ -182,7 +180,7 @@ public class TempoMap {
     
     public static func loadStyle(style: String, floor: String, layerPolygon: String, layerLabel: String) -> NTCartoCSSStyleSet{
         
-        let styleAssets = NTAssetUtils.loadAsset("fonts.zip")
+        let styleAssets = NTAssetUtils.loadAsset("Frameworks/Tempo_ios_sdk.framework/fonts.zip")//"fonts.zip")
         let assetPackage = NTZippedAssetPackage.init(zip: styleAssets)
         let decodercss = NTCartoCSSStyleSet.init(cartoCSS: style, assetPackage: assetPackage)
         return decodercss ?? NTCartoCSSStyleSet.init()

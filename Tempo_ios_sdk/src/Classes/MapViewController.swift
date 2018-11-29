@@ -141,8 +141,10 @@ open class MapViewController: GLKViewController {
         self.collectionView = UICollectionView(frame: CGRect(x: Int(UIScreen.main.bounds.size.width-68), y: 100, width: 48, height: 48), collectionViewLayout: layout)
         self.collectionView?.layer.cornerRadius = 5
         
-        let nib = UINib(nibName: "FloorView", bundle: Bundle.main)
-        let nibHeader = UINib(nibName: "HeaderCollectionFloorView", bundle: Bundle.main)
+        let frameworkBundle = Bundle(for: FloorView.self)//Bundled.main
+        
+        let nib = UINib(nibName: "FloorView", bundle: frameworkBundle)
+        let nibHeader = UINib(nibName: "HeaderCollectionFloorView", bundle: frameworkBundle)
         self.collectionView?.register(nib, forCellWithReuseIdentifier: "floorViewIdentifier")
         self.collectionView?.register(nibHeader, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "HeaderCollectionFloorViewIdentifier")
 
