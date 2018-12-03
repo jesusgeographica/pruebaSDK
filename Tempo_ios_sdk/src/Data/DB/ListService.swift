@@ -10,13 +10,16 @@ import UIKit
 import CoreData
 
 public class ListService {
-    /*
-    public static func getCenter(managedObjectContext:NSManagedObjectContext) -> NSFetchedResultsController<Center> {
+    
+    public static func getCenter(managedObjectContext:NSManagedObjectContext, code: String) -> NSFetchedResultsController<Center> {
         let fetchedResultController: NSFetchedResultsController<Center>
         
-        let request: NSFetchRequest<Center> = PG_Camera.fetchRequest()
+        let request: NSFetchRequest<Center> = Center.fetchRequest()
         let sort = NSSortDescriptor(key: "center_id", ascending: true)
         request.sortDescriptors = [sort]
+        
+        let predicate = NSPredicate(format: "center_id = %@", code)
+        request.predicate = predicate
         
         fetchedResultController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: managedObjectContext, sectionNameKeyPath: nil, cacheName: nil)
         
@@ -29,7 +32,28 @@ public class ListService {
         
         return fetchedResultController
     }
-     
+    
+    internal static func createCenter(coreDate: CoreDataStack, center: ECICenter){
+        let idSearch = ListService.getCenter(managedObjectContext: coreDate.persistentContainer.viewContext, code: center.code)
+        var presObj : Center
+        if(idSearch.fetchedObjects?.count != 0){
+            presObj = (idSearch.fetchedObjects?.last)!
+            presObj.center_id = center.code
+        }else{
+            presObj = Center(context: coreDate.persistentContainer.viewContext)
+        }
+        
+        presObj.name = center.centre_name
+        presObj.lat = (center.centroid_geojson?.coordinates.last)!
+        presObj.lng = (center.centroid_geojson?.coordinates.first)!
+        presObj.center_id = center.code
+        presObj.default_floor = center.default_floor
+        presObj.floors = center.getFloors()
+        
+        coreDate.saveContext()
+        //return presObj
+    }
+     /*
     internal static func searchCamera(managedObjectContext:NSManagedObjectContext, id_camera: String) -> NSFetchedResultsController<PG_Camera> {
         let fetchedResultController: NSFetchedResultsController<PG_Camera>
         
@@ -50,7 +74,7 @@ public class ListService {
         
         return fetchedResultController
     }
-    
+   
     internal static func createCamera(coreDate: CoreDataStack, camera: CameraDTO) -> PG_Camera{
         let idSearch = ListService.searchCamera(managedObjectContext: coreDate.persistentContainer.viewContext, id_camera: camera.id_camera)
         var presObj : PG_Camera

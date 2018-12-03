@@ -34,6 +34,8 @@ open class MapViewController: GLKViewController {
     
     let selectListener = MapVectorEventListener()
     
+    var coreData = CoreDataStack()
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -83,6 +85,7 @@ open class MapViewController: GLKViewController {
             if center.code == "0" {
                 return
             }
+            self.saveCenterOffline(center: center)
             TempoService.getMBTiles(center: center, sendSuccessCompletion: { (files) in
                 self.mbTileTemp = (files.filter({ (url) -> Bool in
                     return url.path.contains("mbtiles")
@@ -94,11 +97,11 @@ open class MapViewController: GLKViewController {
                     let content = try String(contentsOfFile:layers, encoding: String.Encoding.utf8)
                     let stylecss = (Mapper<TempoStyle>().map(JSONString: content))
                     self.tempoStyle = stylecss
+                    self.loadStyleTempo()
                 } catch {
                     // handle error
                     print("Algo ha ocurrido mientras se cargaba el mbtile")
                 }
-                self.loadStyleTempo()
                 
             }, failureCompletion: { (message) in
                 print("error")
@@ -109,25 +112,31 @@ open class MapViewController: GLKViewController {
     }
     
     func loadOffline(center_id: String){
-        TempoService.getMBTilesOffline(center_id: center_id, sendSuccessCompletion: { (files) in
-            self.mbTileTemp = (files.filter({ (url) -> Bool in
-                return url.path.contains("mbtiles")
-            }).first?.path)!
-            let layers = (files.filter({ (url) -> Bool in
-                return url.path.contains("json")
-            }).first?.path)!
-            do {
-                let content = try String(contentsOfFile:layers, encoding: String.Encoding.utf8)
-                let stylecss = (Mapper<TempoStyle>().map(JSONString: content))
-                self.tempoStyle = stylecss
-            } catch {
-                // handle error
-                print("Algo ha ocurrido mientras se cargaba el mbtile")
-            }
-            self.loadStyleTempo()
-        }, failureCompletion: { (message) in
-            print(message)
-        })
+        let centerFR = ListService.getCenter(managedObjectContext: coreData.persistentContainer.viewContext, code: center_id)
+        if((centerFR.fetchedObjects?.count)! > 0){
+            let centerDB = centerFR.fetchedObjects?.first
+            center = ECICenter.init(center: centerDB!)
+            self.setProperties(center: center!)
+            TempoService.getMBTilesOffline(center_id: center_id, sendSuccessCompletion: { (files) in
+                self.mbTileTemp = (files.filter({ (url) -> Bool in
+                    return url.path.contains("mbtiles")
+                }).first?.path)!
+                let layers = (files.filter({ (url) -> Bool in
+                    return url.path.contains("json")
+                }).first?.path)!
+                do {
+                    let content = try String(contentsOfFile:layers, encoding: String.Encoding.utf8)
+                    let stylecss = (Mapper<TempoStyle>().map(JSONString: content))
+                    self.tempoStyle = stylecss
+                    self.loadStyleTempo()
+                } catch {
+                    // handle error
+                    print("Algo ha ocurrido mientras se cargaba el mbtile")
+                }
+            }, failureCompletion: { (message) in
+                print(message)
+            })
+        }
     }
     
     public func showFloors(floor: [String]){
@@ -162,15 +171,23 @@ open class MapViewController: GLKViewController {
     }
     
     func showContentEvent(text: String) {
-        let contentView = MapContentViewController()
-        contentView.height = 200
-        contentView.topCornerRadius = 5
-        contentView.presentDuration = 0.25
-        contentView.dismissDuration = 0.25
-        contentView.shouldDismissInteractivelty = true
-        contentView.titleLabel = text
-        contentView.popupDelegate = self
-        present(contentView, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            // Access UI stuff here
+            let bundleMap = Bundle.init(for: MapContentViewController.self)
+            let contentView = MapContentViewController(nibName: "MapContentViewController", bundle: bundleMap)//()
+            contentView.height = 200
+            contentView.topCornerRadius = 5
+            contentView.presentDuration = 0.25
+            contentView.dismissDuration = 0.25
+            contentView.shouldDismissInteractivelty = true
+            contentView.titleLabel = text
+            contentView.popupDelegate = self
+            self.present(contentView, animated: true, completion: nil)
+        }
+    }
+    
+    func saveCenterOffline(center: ECICenter){
+        ListService.createCenter(coreDate: coreData, center: center)
     }
 }
 

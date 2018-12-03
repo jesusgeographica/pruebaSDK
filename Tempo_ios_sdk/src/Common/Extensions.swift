@@ -8,6 +8,7 @@
 
 import UIKit
 import CartoMobileSDK
+import CoreData
 
 extension UIColor {
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
@@ -55,4 +56,14 @@ extension UIColor {
         getRed(&fRed, green: &fGreen, blue: &fBlue, alpha: &fAlpha)
         return NTColor(r: UInt8(fRed * 255.0), g: UInt8(fGreen * 255.0), b: UInt8(fBlue * 255.0), a: UInt8(fAlpha * 255.0))
     }
+}
+
+public extension NSManagedObject {
+    
+    convenience init(context: NSManagedObjectContext) {
+        let name = String(describing: type(of: self))
+        let entity = NSEntityDescription.entity(forEntityName: name, in: context)!
+        self.init(entity: entity, insertInto: context)
+    }
+    
 }

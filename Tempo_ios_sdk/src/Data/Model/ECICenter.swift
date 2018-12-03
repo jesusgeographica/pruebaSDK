@@ -19,6 +19,15 @@ public class ECICenter : Mappable {
     public var floors : [String] = []
     public var cartography : ECICartographyCenter?
     
+    public init(center: Center) {
+        self.centre_name = center.name ?? ""
+        self.code = center.center_id!
+        self.default_floor = center.default_floor!
+        self.floors = (center.floors?.components(separatedBy: ","))!
+        
+        self.centroid_geojson = ECILocationCenter.init(lat: center.lat, lng: center.lng)
+    }
+    
     public required init?(map: Map) {
         centre_name <- map["centre_name"]
         codeInt <- map["id"]
@@ -41,11 +50,21 @@ public class ECICenter : Mappable {
         default_floor <- map["default_floor"]
         cartography <- map["cartography"]
     }
+    
+    public func getFloors() -> String{
+        let floorSTR = floors.joined(separator: ",")
+        return floorSTR
+    }
 }
 
 public class ECILocationCenter : Mappable {
     public var type : String = ""
     public var coordinates : [Float] = []
+    
+    init(lat: Float, lng: Float) {
+        coordinates = [lng, lat]
+    }
+    
     public required init?(map: Map) {
         type <- map["type"]
         coordinates <- map["coordinates"]

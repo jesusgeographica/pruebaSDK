@@ -102,10 +102,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/HeaderCollectionFloorView.xib"
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/MapContentViewController.xib"
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld"
+  install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/Model.xcdatamodel"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/FloorView.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/MapContentViewController.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/HeaderCollectionFloorView.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/Model.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts.zip"
@@ -118,10 +118,10 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/HeaderCollectionFloorView.xib"
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/MapContentViewController.xib"
   install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld"
+  install_resource "${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/Model.xcdatamodel"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/FloorView.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/MapContentViewController.bundle"
   install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/HeaderCollectionFloorView.bundle"
-  install_resource "${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/Model.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

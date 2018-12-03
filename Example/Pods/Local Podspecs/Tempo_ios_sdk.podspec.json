@@ -20,20 +20,17 @@
     "ios": "10.0"
   },
   "swift_version": "4.2",
-  "source_files": "Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld}",
-  "resources": "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld}",
+  "source_files": "Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld,xcdatamodel}",
+  "resources": "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld,xcdatamodel}",
   "resource_bundles": {
     "FloorView": [
       "Tempo_ios_sdk/**/*.xib"
     ],
     "MapContentViewController": [
-      "Pod/**/*.xib"
+      "Tempo_ios_sdk/**/*.xib"
     ],
     "HeaderCollectionFloorView": [
-      "Pod/**/*.xib"
-    ],
-    "Model": [
-      "Pod/**/*.xcdatamodeld"
+      "Tempo_ios_sdk/**/*.xib"
     ]
   },
   "requires_arc": true,
@@ -49,7 +46,10 @@
   "ios": {
     "vendored_frameworks": "Tempo_ios_sdk/Frameworks/CartoMobileSDK.framework"
   },
-  "preserve_paths": "Tempo_ios_sdk/Frameworks/*",
+  "preserve_paths": [
+    "Tempo_ios_sdk/Frameworks/*",
+    "Tempo_ios_sdk/**/*.xcdatamodeld"
+  ],
   "dependencies": {
     "AlamofireObjectMapper": [
       "~> 5.2"

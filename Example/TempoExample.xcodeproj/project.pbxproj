@@ -240,10 +240,10 @@
 				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/HeaderCollectionFloorView.xib",
 				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/MapContentViewController.xib",
 				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/Model.xcdatamodel",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/FloorView.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/MapContentViewController.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/HeaderCollectionFloorView.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/Model.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
@@ -259,10 +259,10 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HeaderCollectionFloorView.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapContentViewController.nib",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.mom",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FloorView.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapContentViewController.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HeaderCollectionFloorView.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -4,8 +4,11 @@
         <attribute name="center_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="default_floor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="floors" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Center" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Center" positionX="-63" positionY="-18" width="128" height="135"/>
     </elements>
 </model>
