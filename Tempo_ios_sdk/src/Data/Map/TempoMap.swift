@@ -170,7 +170,7 @@ public class TempoMap {
                 "marker-width: 18;" +
                 "marker-file:url('fonts/probadores.png');" +
             "}" +
-                "[type='ESCALERAS']{" +
+            "[type='ESCALERAS']{" +
                 "marker-file:url('fonts/escalera.png');" +
             "}" +
         "}"

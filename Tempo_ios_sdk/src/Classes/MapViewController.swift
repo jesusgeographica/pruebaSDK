@@ -276,7 +276,7 @@ extension MapViewController : UICollectionViewDelegateFlowLayout {
 extension MapViewController : MapVectorEventListenerDelegate {
     func onClickedEvent(event: NTVariant) {
         let type = event.getObjectElement("type")?.getString()
-        if type == "CORNERS" {
+        if type != "PERIMETRO" {
             let nameBet = event.getObjectElement("name")?.getString()
             showContentEvent(text: nameBet!)
             TempoMap.showStyleDetail(mbtile: self.mbTileTemp, map: self.mapView!, layers: self.tempoStyle!, center: self.center!, floor:self.floorSelected, cartodb_id: (event.getObjectElement("cartodb_id")?.description())!)
