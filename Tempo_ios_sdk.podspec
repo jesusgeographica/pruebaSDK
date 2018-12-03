@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Javier Aragón' => 'javier.aragon@geographica.gs',
   						'Jesús Victorio' => 'jesus.victorio@geographica.gs',  }
-  s.source           = { :git => 'git@github.com:GeographicaGS/Tempo-ios-sdk.git', :tag => s.version.to_s}
+  s.source           = { :git => 'git@github.com:jesusgeographica/pruebaSDK.git'}
 
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftyJWT', '~> 0.0.3'
   s.dependency 'SSZipArchive', '~> 2.1'
   s.dependency 'BottomPopup', '~> 0.4'
-  
+
   s.prepare_command = <<-CMD
                         echo "Downloading CartoMobileSDK, please wait..."
                         curl --progress-bar "https://nutifront.s3.amazonaws.com/sdk_snapshots/sdk4-ios-build-4.1.4.zip"  --output CartoMobileSDK.zip
