@@ -131,7 +131,7 @@ public class TempoMap {
         let cartoCSS =
             "#\(layerLabel)::labels [type='CORNERS'] [height=\(floor)] {" +
                 "text-name: '[name]';" +
-                "text-face-name: 'Lato Bold';" +
+                "text-face-name: 'ECIFont Regular';" +
                 "text-character-spacing: 1;" +
                 "text-size: 11;" +
                 "text-fill: #484848;" +
@@ -180,7 +180,7 @@ public class TempoMap {
     
     public static func loadStyle(style: String, floor: String, layerPolygon: String, layerLabel: String) -> NTCartoCSSStyleSet{
         
-        let styleAssets = NTAssetUtils.loadAsset("Frameworks/Tempo_ios_sdk.framework/fonts.zip")//"fonts.zip")
+        let styleAssets = NTAssetUtils.loadAsset("fonts.zip")//"Frameworks/Tempo_ios_sdk.framework/fonts.zip")//
         let assetPackage = NTZippedAssetPackage.init(zip: styleAssets)
         let decodercss = NTCartoCSSStyleSet.init(cartoCSS: style, assetPackage: assetPackage)
         return decodercss ?? NTCartoCSSStyleSet.init()

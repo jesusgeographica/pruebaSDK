@@ -12,7 +12,9 @@ import CoreData
 class CoreDataStack {
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Model")
+        let frameworkBundle = Bundle(for: FloorView.self)
+        //let container = NSPersistentContainer(name: "Model")
+        let container = NSPersistentContainer.init(name: "Model", bundle: frameworkBundle)
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 print("Unresolved error \(error), \(error.userInfo)")
