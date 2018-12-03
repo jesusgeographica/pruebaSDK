@@ -38,6 +38,10 @@ class FloorView: UICollectionViewCell {
         viewSelected.layer.cornerRadius = 2
         viewCircleSelected.isHidden = true
         
+        lbFloorTitle.font = UIFont(name: "ECIFont-Medium", size: 10)
+        lbFloor.font = UIFont(name: "ECIFont-Medium", size: 17)
+        lbFloorNumber.font = UIFont(name: "ECIFont-Medium", size: 17)
+        
         lbFloor.textColor = TempoConstant.color.cell.greenECI
         
         lineSeparator.backgroundColor = TempoConstant.color.cell.graySeparator

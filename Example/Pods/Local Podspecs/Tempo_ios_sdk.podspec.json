@@ -13,15 +13,20 @@
     "Jesús Victorio": "jesus.victorio@geographica.gs"
   },
   "source": {
-    "git": "git@github.com:GeographicaGS/Tempo-ios-sdk.git",
-    "tag": "0.1.2"
+    "git": "git@github.com:jesusgeographica/pruebaSDK.git"
   },
   "platforms": {
     "ios": "10.0"
   },
   "swift_version": "4.2",
-  "source_files": "Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld,xcdatamodel}",
-  "resources": "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld,xcdatamodel}",
+  "source_files": [
+    "Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld,xcdatamodel}",
+    "Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/*.xcdatamodel"
+  ],
+  "resources": [
+    "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld,xcdatamodel,ttf}",
+    "Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/*.xcdatamodel"
+  ],
   "resource_bundles": {
     "FloorView": [
       "Tempo_ios_sdk/**/*.xib"
@@ -39,6 +44,8 @@
     "c++"
   ],
   "frameworks": [
+    "Foundation",
+    "UIKit",
     "GLKit",
     "CoreData",
     "CartoMobileSDK"
@@ -48,7 +55,7 @@
   },
   "preserve_paths": [
     "Tempo_ios_sdk/Frameworks/*",
-    "Tempo_ios_sdk/**/*.xcdatamodeld"
+    "Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld"
   ],
   "dependencies": {
     "AlamofireObjectMapper": [

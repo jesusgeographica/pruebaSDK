@@ -39,8 +39,25 @@ open class MapViewController: GLKViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        registerFonts()
     }
+    
+    /**
+     * Register fonts and apply them to labels and navigation
+     */
+    func registerFonts(){
+        let frameworkBundle = Bundle(for: FloorView.self)//Bundled.main
+        _ = UIFont.registerFont(bundle: frameworkBundle, fontName: "ECIFont-regular", fontExtension: "ttf")
+        _ = UIFont.registerFont(bundle: frameworkBundle, fontName: "ECIFont-Light", fontExtension: "ttf")
+        _ = UIFont.registerFont(bundle: frameworkBundle, fontName: "ECIFont-Medium", fontExtension: "ttf")
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "ECIFont-Medium", size: 16) ?? UIFont.init()]
+        UILabel.appearance().font = UIFont(name: "ECIFont-Regular", size: UIFont.systemFontSize)
+
+    }
+    
+    /**
+     * Create an instance of the map class and register it with the license
+     */
     
     public func createMap(){
         
@@ -59,8 +76,11 @@ open class MapViewController: GLKViewController {
         
         mapView?.setFocus(tallinn, durationSeconds: 0)
         mapView?.setZoom(zoom, durationSeconds: 0)
-        //mapListener?.delegate = self
     }
+    
+    /**
+     * Modify the internal properties of the map for the new center
+     */
     
     func setProperties(center: ECICenter){
         self.center = center
@@ -77,6 +97,13 @@ open class MapViewController: GLKViewController {
         mapView?.setZoom(zoom, durationSeconds: 1)
         
     }
+    
+    /**
+     *  Paint the map by following the following processes:
+     *  1. Ask for an update of the center to download it, in case of not having internet, access the database to get the current one.
+     *  2. If the connection is good, update the center data and get the new MBTile.
+     *  3. Load the map style.
+     */
     
     public func drawCenter(center_id: String){
         
@@ -138,6 +165,10 @@ open class MapViewController: GLKViewController {
             })
         }
     }
+    
+    /**
+     * Show the collectionview for the floors.
+     */
     
     public func showFloors(floor: [String]){
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()

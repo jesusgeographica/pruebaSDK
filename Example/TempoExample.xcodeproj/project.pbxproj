@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A4ED60BF696544E0171DE06 /* libPods-TempoExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AED50A5B869529009786CE5B /* libPods-TempoExample.a */; };
 		A002885F21AD5A980073126D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002885D21AD5A980073126D /* MenuViewController.swift */; };
 		A002886021AD5A980073126D /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A002885E21AD5A980073126D /* MenuViewController.xib */; };
 		A002886321AD5D9D0073126D /* menuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A002886221AD5D9D0073126D /* menuButton.png */; };
@@ -18,11 +17,12 @@
 		A04AFA6C21A6BB40001AB22B /* ViewControllerXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = A04AFA6821A6BB40001AB22B /* ViewControllerXIB.xib */; };
 		A04AFA6D21A6BB40001AB22B /* ViewControllerXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AFA6921A6BB40001AB22B /* ViewControllerXIB.swift */; };
 		A04AFA6E21A6BB40001AB22B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AFA6B21A6BB40001AB22B /* ViewController.swift */; };
+		F3EEB9E17EA41B744221CABD /* libPods-TempoExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4001BC98BB5D3380285AFBBA /* libPods-TempoExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0168409D6D25B7995AF6527A /* Pods-TempoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample.release.xcconfig"; sourceTree = "<group>"; };
-		03ECB75D8F9EBD2A349088CD /* Pods-TempoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample.debug.xcconfig"; sourceTree = "<group>"; };
+		4001BC98BB5D3380285AFBBA /* libPods-TempoExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TempoExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9A30F629F02232BE5FE8D8 /* Pods-TempoExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample.release.xcconfig"; sourceTree = "<group>"; };
 		A002885D21AD5A980073126D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A002885E21AD5A980073126D /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		A002886221AD5D9D0073126D /* menuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuButton.png; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		A04AFA6821A6BB40001AB22B /* ViewControllerXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerXIB.xib; sourceTree = "<group>"; };
 		A04AFA6921A6BB40001AB22B /* ViewControllerXIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerXIB.swift; sourceTree = "<group>"; };
 		A04AFA6B21A6BB40001AB22B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AED50A5B869529009786CE5B /* libPods-TempoExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TempoExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0AB63BD7620DE0D27E72DF /* Pods-TempoExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,26 +43,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A4ED60BF696544E0171DE06 /* libPods-TempoExample.a in Frameworks */,
+				F3EEB9E17EA41B744221CABD /* libPods-TempoExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0974D79587E9748892E1292B /* Pods */ = {
+		68DF98EA8EBCEAB741E2DB20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				03ECB75D8F9EBD2A349088CD /* Pods-TempoExample.debug.xcconfig */,
-				0168409D6D25B7995AF6527A /* Pods-TempoExample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		82F6090850D030169673D23C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AED50A5B869529009786CE5B /* libPods-TempoExample.a */,
+				4001BC98BB5D3380285AFBBA /* libPods-TempoExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,8 +71,8 @@
 			children = (
 				A04AFA5421A6BAC9001AB22B /* TempoExample */,
 				A04AFA5321A6BAC9001AB22B /* Products */,
-				0974D79587E9748892E1292B /* Pods */,
-				82F6090850D030169673D23C /* Frameworks */,
+				C4687DB41B676E0CE3BDC43B /* Pods */,
+				68DF98EA8EBCEAB741E2DB20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +118,15 @@
 			path = storyboard;
 			sourceTree = "<group>";
 		};
+		C4687DB41B676E0CE3BDC43B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC0AB63BD7620DE0D27E72DF /* Pods-TempoExample.debug.xcconfig */,
+				9C9A30F629F02232BE5FE8D8 /* Pods-TempoExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,11 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A04AFA6421A6BACA001AB22B /* Build configuration list for PBXNativeTarget "TempoExample" */;
 			buildPhases = (
-				6F10300F529F29BEE419D738 /* [CP] Check Pods Manifest.lock */,
+				E74BC634EBFDCF64475DAB8C /* [CP] Check Pods Manifest.lock */,
 				A04AFA4E21A6BAC9001AB22B /* Sources */,
 				A04AFA4F21A6BAC9001AB22B /* Frameworks */,
 				A04AFA5021A6BAC9001AB22B /* Resources */,
-				DF36D2D2EF4BB6677B39781F /* [CP] Copy Pods Resources */,
+				42CCC29C293086C05BEE06E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +199,101 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6F10300F529F29BEE419D738 /* [CP] Check Pods Manifest.lock */ = {
+		42CCC29C293086C05BEE06E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample-resources.sh",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts.zip",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/ascensor.png",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/aseos.png",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/DejaVuSans.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/ECIFont-Light.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/ECIFont-Medium.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/ECIFont-regular.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/escalera.png",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/exit.png",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/graduate-regular.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/GravitasOne.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/Lato-Bold.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/Lato-BoldItalic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/Lato-Regular.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OldStandard-Bold.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OldStandard-Italic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OldStandard-Regular.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-Bold.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-BoldItalic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-ExtraBold.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-ExtraBoldItalic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-Italic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-Light.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-LightItalic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-Regular.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-Semibold.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/OpenSans-SemiboldItalic.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/probadores.png",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/unifont-7.0.06.ttf",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/FloorView.xib",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/HeaderCollectionFloorView.xib",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/MapContentViewController.xib",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld",
+				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/Model.xcdatamodel",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/FloorView.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/MapContentViewController.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/HeaderCollectionFloorView.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fonts.zip",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ascensor.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/aseos.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DejaVuSans.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ECIFont-Light.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ECIFont-Medium.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ECIFont-regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/escalera.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/exit.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/graduate-regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GravitasOne.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Lato-Bold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Lato-BoldItalic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Lato-Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OldStandard-Bold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OldStandard-Italic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OldStandard-Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-Bold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-BoldItalic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-ExtraBold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-ExtraBoldItalic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-Italic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-Light.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-LightItalic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-Regular.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-Semibold.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/OpenSans-SemiboldItalic.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/probadores.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/unifont-7.0.06.ttf",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FloorView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HeaderCollectionFloorView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapContentViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.mom",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FloorView.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapContentViewController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HeaderCollectionFloorView.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E74BC634EBFDCF64475DAB8C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,54 +313,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF36D2D2EF4BB6677B39781F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample-resources.sh",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts.zip",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/ascensor.png",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/aseos.png",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/escalera.png",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/exit.png",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Common/fonts/probadores.png",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/FloorView.xib",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/HeaderCollectionFloorView.xib",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Views/MapContentViewController.xib",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld",
-				"${PODS_ROOT}/../../Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/Model.xcdatamodel",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/FloorView.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/MapContentViewController.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/Tempo_ios_sdk/HeaderCollectionFloorView.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fonts.zip",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ascensor.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/aseos.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/escalera.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/exit.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/probadores.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FloorView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HeaderCollectionFloorView.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapContentViewController.nib",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.momd",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Model.mom",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FloorView.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MapContentViewController.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HeaderCollectionFloorView.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TempoExample/Pods-TempoExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -423,7 +469,7 @@
 		};
 		A04AFA6521A6BACA001AB22B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03ECB75D8F9EBD2A349088CD /* Pods-TempoExample.debug.xcconfig */;
+			baseConfigurationReference = EC0AB63BD7620DE0D27E72DF /* Pods-TempoExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -455,7 +501,7 @@
 		};
 		A04AFA6621A6BACA001AB22B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0168409D6D25B7995AF6527A /* Pods-TempoExample.release.xcconfig */;
+			baseConfigurationReference = 9C9A30F629F02232BE5FE8D8 /* Pods-TempoExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

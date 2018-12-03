@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   s.swift_version = '4.2'
 
-  s.source_files = 'Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld,xcdatamodel}'
-  s.resources = "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld,xcdatamodel}"
+  s.source_files = 'Tempo_ios_sdk/src/**/*.{swift,h,m,xcdatamodeld,xcdatamodel}', 'Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/*.xcdatamodel'
+  s.resources = "Tempo_ios_sdk/src/**/*.{xib,zip,png,xcdatamodeld,xcdatamodel,ttf}", 'Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld/*.xcdatamodel'
 
   s.resource_bundles = {
     'FloorView' => [
@@ -37,9 +37,9 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.libraries = 'z', 'c++'
-  s.frameworks = 'GLKit', 'CoreData', 'CartoMobileSDK'
+  s.frameworks = 'Foundation', 'UIKit', 'GLKit', 'CoreData', 'CartoMobileSDK'
   s.ios.vendored_frameworks = 'Tempo_ios_sdk/Frameworks/CartoMobileSDK.framework'
-  s.preserve_path = 'Tempo_ios_sdk/Frameworks/*', 'Tempo_ios_sdk/**/*.xcdatamodeld'
+  s.preserve_path = 'Tempo_ios_sdk/Frameworks/*', 'Tempo_ios_sdk/src/Data/DB/Model.xcdatamodeld'
 
   s.dependency 'AlamofireObjectMapper', '~> 5.2'
   s.dependency 'SwiftyJWT', '~> 0.0.3'
@@ -47,11 +47,11 @@ Pod::Spec.new do |s|
   s.dependency 'BottomPopup', '~> 0.4'
 
   s.prepare_command = <<-CMD
-                        echo "Downloading CartoMobileSDK, please wait..."
-                        curl --progress-bar "https://nutifront.s3.amazonaws.com/sdk_snapshots/sdk4-ios-build-4.1.4.zip"  --output CartoMobileSDK.zip
-                        unzip CartoMobileSDK.zip
-                        rm CartoMobileSDK.zip
-                        cp -r CartoMobileSDK.framework/* Tempo_ios_sdk/Frameworks/CartoMobileSDK.framework
-                        rm -r CartoMobileSDK.framework
-                   CMD
+                          echo "Downloading CartoMobileSDK, please wait..."
+                          curl --progress-bar "https://nutifront.s3.amazonaws.com/sdk_snapshots/sdk4-ios-build-4.1.4.zip"  --output CartoMobileSDK.zip
+                          unzip CartoMobileSDK.zip
+                          rm CartoMobileSDK.zip
+                          cp -r CartoMobileSDK.framework/* Tempo_ios_sdk/Frameworks/CartoMobileSDK.framework
+                          rm -r CartoMobileSDK.framework
+                     CMD
 end

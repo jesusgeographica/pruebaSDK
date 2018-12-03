@@ -15,6 +15,10 @@ public class TempoMap {
     static var decoderCss : NTCartoCSSStyleSet?
     static var css : String = ""
     
+    /*
+        Show the MBTile with the style layer
+     */
+    
     public static func showMBTileonMap(mbtile: String, map: NTMapView, layers: TempoStyle, floor: String){
         if(offlineLayer != nil) {
             map.getLayers()?.remove(offlineLayer)
@@ -27,6 +31,10 @@ public class TempoMap {
         offlineLayer?.getTileDecoder()?.notifyChanged()
         map.getLayers().add(offlineLayer)
     }
+    
+    /*
+        Change the floor and update the MBTile
+     */
     
     public static func changeFloor(mbtile: String, map: NTMapView, layers: TempoStyle, center: ECICenter, floor: String){
         if(offlineLayer != nil) {
@@ -180,12 +188,14 @@ public class TempoMap {
     
     public static func loadStyle(style: String, floor: String, layerPolygon: String, layerLabel: String) -> NTCartoCSSStyleSet{
         
-        let styleAssets = NTAssetUtils.loadAsset("fonts.zip")//"Frameworks/Tempo_ios_sdk.framework/fonts.zip")//
+        let styleAssets = NTAssetUtils.loadAsset("Frameworks/Tempo_ios_sdk.framework/fonts.zip")//fonts.zip
         let assetPackage = NTZippedAssetPackage.init(zip: styleAssets)
         let decodercss = NTCartoCSSStyleSet.init(cartoCSS: style, assetPackage: assetPackage)
         return decodercss ?? NTCartoCSSStyleSet.init()
     }
-    
+    /*
+        Predefine the collectionview design of the floors
+     */
     public static func drawStyleFloors(collectionView: UICollectionView){
         
         collectionView.layer.cornerRadius = 8
