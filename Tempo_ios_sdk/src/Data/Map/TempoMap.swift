@@ -180,7 +180,7 @@ public class TempoMap {
     
     public static func loadStyle(style: String, floor: String, layerPolygon: String, layerLabel: String) -> NTCartoCSSStyleSet{
         
-        let styleAssets = NTAssetUtils.loadAsset("fonts.zip")//"fonts.zip")"Frameworks/Tempo_ios_sdk.framework/fonts.zip")//"fonts.zip")
+        let styleAssets = NTAssetUtils.loadAsset("Frameworks/Tempo_ios_sdk.framework/fonts.zip")//"fonts.zip")
         let assetPackage = NTZippedAssetPackage.init(zip: styleAssets)
         let decodercss = NTCartoCSSStyleSet.init(cartoCSS: style, assetPackage: assetPackage)
         return decodercss ?? NTCartoCSSStyleSet.init()
